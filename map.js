@@ -1,11 +1,23 @@
 // Map initialization
 const map = L.map('map').setView([0, 0], 2);
 
-// OpenStreetMap Tiles
-L.tileLayer('https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=42dcc4335f134d00bb273958d5b3008d', {
+// OpenStreetMap Tiles						vvvvvvv
+L.tileLayer('https://tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=42dcc4335f134d00bb273958d5b3008d', {
 	maxZoom: 22,
 	attribution: '© Thunderforest, © OpenStreetMap contributors'
 }).addTo(map);
+/*replace pioneer with : 
+	cycle
+	transport
+	landscape
+	outdoors
+	transport-dark
+	spinal-map
+	pioneer
+	mobile-atlas
+	neighbourhood
+	atlas
+*/
 
 let marker = null;
 
