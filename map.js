@@ -2,14 +2,14 @@
 const map = L.map('map').setView([0, 0], 2);
 
 // OpenStreetMap Tiles
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 20,
-	attribution: '© OpenStreetMap'
+L.tileLayer('https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=42dcc4335f134d00bb273958d5b3008d', {
+	maxZoom: 22,
+	attribution: '© Thunderforest, © OpenStreetMap contributors'
 }).addTo(map);
 
 let marker = null;
 
-// Fonction called after every update of player position
+// Function called after every update of player position
 function updatePosition(pos) {
 	const lat = pos.coords.latitude;
 	const lon = pos.coords.longitude;
